@@ -1,6 +1,11 @@
 from tkinter import *
 
 def play(event):
+    secondrow=height/3
+    thirdrow=secondrow*2
+
+
+
 
 window=Tk()
 cross=True

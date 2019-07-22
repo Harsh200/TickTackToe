@@ -2,7 +2,9 @@ from tkinter import *
 
 def drawShape(x,y):
     global cross
-
+    if cross:
+        gameboard.create_line(x,y,x+ width/3,y+ height/3)
+        gameboard.create_line(x, y + height / 3, x + width / 3, y)
 
 def play(event):
     secondrow=height/3
@@ -35,7 +37,7 @@ gameboard.create_line(0,(height/3)*2,width,(height/3)*2)
 gameboard.create_line(width/3,0,width/3,height)
 gameboard.create_line((width/3)*2,0,(width/3)*2,height)
 gameboard.pack()
-gameboard.bind("<Button-1",play)
+gameboard.bind("<Button-1>",play)
 
 
 

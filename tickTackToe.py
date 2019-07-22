@@ -2,6 +2,7 @@ from tkinter import *
 
 def drawShape(x,y):
     global cross
+    margin=20
     if cross:
         gameboard.create_line(x,y,x+ width/3,y+ height/3)
         gameboard.create_line(x, y + height / 3, x + width / 3, y)

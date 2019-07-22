@@ -9,6 +9,7 @@ gameboard.create_line(0,(height/3)*2,width,(height/3)*2)
 gameboard.create_line(width/3,0,width/3,height)
 gameboard.create_line((width/3)*2,0,(width/3)*2,height)
 gameboard.pack()
+gameboard.bind("<Button-1",play)
 
 
 

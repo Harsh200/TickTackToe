@@ -4,8 +4,12 @@ def drawShape(x,y):
     global cross
     margin=20
     if cross:
-        gameboard.create_line(x+margin,y+margin,x+ (width/3)-margin,y+ (height/3)-margin)
-        gameboard.create_line(x+margin, y + (height / 3)-margin, x + (width / 3)-margin, y+margin)
+        gameboard.create_line(x+margin,y+margin,x+ (width/3)-margin,y+ (height/3)-margin,fill="Blue",width=10)
+        gameboard.create_line(x+margin, y + (height / 3)-margin, x + (width / 3)-margin, y+margin,fill="Blue",width=10)
+        cross=False
+    else:
+        gameboard.create_oval(x+margin,y+margin,x+(width/3)-margin,y+(height/3)-margin,width=10,outline="Red")
+        cross=True
 
 def play(event):
     secondrow=height/3

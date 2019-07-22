@@ -1,4 +1,7 @@
 from tkinter import *
+
+def play(event):
+
 window=Tk()
 cross=True
 width=500

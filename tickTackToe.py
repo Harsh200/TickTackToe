@@ -3,7 +3,8 @@ from tkinter import *
 def play(event):
     secondrow=height/3
     thirdrow=secondrow*2
-
+    secondcolumn=width/3
+    thirdcolumn=secondcolumn*2
 
 
 

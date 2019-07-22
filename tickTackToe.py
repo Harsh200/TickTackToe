@@ -1,6 +1,8 @@
 from tkinter import *
 
 def drawShape(x,y):
+    global cross
+
 
 def play(event):
     secondrow=height/3

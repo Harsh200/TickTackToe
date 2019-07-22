@@ -4,8 +4,8 @@ def drawShape(x,y):
     global cross
     margin=20
     if cross:
-        gameboard.create_line(x,y,x+ width/3,y+ height/3)
-        gameboard.create_line(x, y + height / 3, x + width / 3, y)
+        gameboard.create_line(x+margin,y+margin,x+ (width/3)-margin,y+ (height/3)-margin)
+        gameboard.create_line(x+margin, y + (height / 3)-margin, x + (width / 3)-margin, y+margin)
 
 def play(event):
     secondrow=height/3

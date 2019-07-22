@@ -1,5 +1,7 @@
 from tkinter import *
 
+def drawShape(x,y):
+
 def play(event):
     secondrow=height/3
     thirdrow=secondrow*2
@@ -16,6 +18,8 @@ def play(event):
         offsetx=0
     elif event.x<thirdcolumn:
         offsetx=secondcolumn
+
+    drawShape(offsetx,offsety)
 
 
 

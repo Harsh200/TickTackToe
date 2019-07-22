@@ -12,7 +12,10 @@ def play(event):
     elif event.y<thirdrow:
         offsety=secondrow
 
-
+    if event.x<secondcolumn:
+        offsetx=0
+    elif event.x<thirdcolumn:
+        offsetx=secondcolumn
 
 
 

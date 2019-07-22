@@ -5,6 +5,14 @@ def play(event):
     thirdrow=secondrow*2
     secondcolumn=width/3
     thirdcolumn=secondcolumn*2
+    offsetx=thirdcolumn
+    offsety=thirdrow
+    if event.y<secondrow:
+        offsety=0
+    elif event.y<thirdrow:
+        offsety=secondrow
+
+
 
 
 
